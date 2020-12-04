@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var pressedButton: UIButton!
     
     
     
@@ -18,6 +17,9 @@ class ViewController: UIViewController {
         print(#line, #function)
     }
 
-
+    @IBAction func pressedButton() {
+        print(#line, #function)
+    }
+    
 }
 
