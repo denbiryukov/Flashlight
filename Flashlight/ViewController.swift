@@ -14,16 +14,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateUI()
+
     }
 
-    @IBAction func pressedButton() {
-        isLightOn.toggle() //Меняет значение переменной
-        if isLightOn{
+    fileprivate func updateUI() {
+       /* if isLightOn{
             view.backgroundColor = .white
         } else {
             view.backgroundColor = .black
-        }
+        } */
+        view.backgroundColor = isLightOn ? .white : .black
+    }
+    
+    @IBAction func pressedButton() {
+        isLightOn.toggle()  //Меняет значение переменной
+        updateUI()
         
     }
     
