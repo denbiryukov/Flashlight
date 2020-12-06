@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var isLightOn = false
+    var isLightOn = true
     
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressedButton() {
-        isLightOn.toggle()  //Меняет значение переменной
+        isLightOn.toggle()  //Меняет значение переменной на противоположное
         updateUI()
         
     }
